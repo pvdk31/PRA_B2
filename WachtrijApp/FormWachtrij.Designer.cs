@@ -35,7 +35,7 @@
             this.AttractieLogo = new System.Windows.Forms.PictureBox();
             this.labelKar2 = new System.Windows.Forms.Label();
             this.labelKar1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelKar3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,16 +108,16 @@
             this.labelKar1.TabIndex = 9;
             this.labelKar1.Text = "Kar 1: ...";
             // 
-            // label1
+            // labelKar3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.label1.Location = new System.Drawing.Point(38, 130);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 23);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelKar3.AutoSize = true;
+            this.labelKar3.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.labelKar3.Location = new System.Drawing.Point(38, 130);
+            this.labelKar3.Name = "labelKar3";
+            this.labelKar3.Size = new System.Drawing.Size(93, 29);
+            this.labelKar3.TabIndex = 10;
+            this.labelKar3.Text = "Kar 3: ...";
+            this.labelKar3.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormWachtrij
             // 
@@ -125,7 +125,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(403, 311);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelKar3);
             this.Controls.Add(this.labelKar1);
             this.Controls.Add(this.labelKar2);
             this.Controls.Add(this.AttractieLogo);
@@ -150,7 +150,7 @@
         private System.Windows.Forms.PictureBox AttractieLogo;
         private System.Windows.Forms.Label labelKar2;
         private System.Windows.Forms.Label labelKar1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelKar3;
     }
 }
 
