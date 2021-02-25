@@ -143,5 +143,20 @@ namespace WachtrijApp
 
             return "";
         }
+
+        private void labelTitel_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Hero");
+        }
+
+        private void labelKar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

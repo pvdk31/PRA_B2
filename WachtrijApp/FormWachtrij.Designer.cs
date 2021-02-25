@@ -35,6 +35,7 @@
             this.AttractieLogo = new System.Windows.Forms.PictureBox();
             this.labelKar2 = new System.Windows.Forms.Label();
             this.labelKar1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,19 +43,22 @@
             // 
             this.labelTitel.AutoSize = true;
             this.labelTitel.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitel.Location = new System.Drawing.Point(26, 18);
+            this.labelTitel.Location = new System.Drawing.Point(35, 22);
+            this.labelTitel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitel.Name = "labelTitel";
-            this.labelTitel.Size = new System.Drawing.Size(186, 32);
+            this.labelTitel.Size = new System.Drawing.Size(239, 50);
             this.labelTitel.TabIndex = 0;
-            this.labelTitel.Text = "Bugs of Horror";
+            this.labelTitel.Text = "Debug Hero";
+            this.labelTitel.Click += new System.EventHandler(this.labelTitel_Click);
             // 
             // labelWachttijd
             // 
             this.labelWachttijd.AutoSize = true;
             this.labelWachttijd.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWachttijd.Location = new System.Drawing.Point(27, 149);
+            this.labelWachttijd.Location = new System.Drawing.Point(36, 183);
+            this.labelWachttijd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWachttijd.Name = "labelWachttijd";
-            this.labelWachttijd.Size = new System.Drawing.Size(99, 25);
+            this.labelWachttijd.Size = new System.Drawing.Size(127, 32);
             this.labelWachttijd.TabIndex = 4;
             this.labelWachttijd.Text = "Wachttijd";
             // 
@@ -62,9 +66,10 @@
             // 
             this.labelWachttijdMelding.AutoSize = true;
             this.labelWachttijdMelding.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWachttijdMelding.Location = new System.Drawing.Point(29, 174);
+            this.labelWachttijdMelding.Location = new System.Drawing.Point(39, 214);
+            this.labelWachttijdMelding.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWachttijdMelding.Name = "labelWachttijdMelding";
-            this.labelWachttijdMelding.Size = new System.Drawing.Size(71, 18);
+            this.labelWachttijdMelding.Size = new System.Drawing.Size(88, 23);
             this.labelWachttijdMelding.TabIndex = 5;
             this.labelWachttijdMelding.Text = "0 minuten";
             // 
@@ -72,9 +77,10 @@
             // 
             this.AttractieLogo.ErrorImage = null;
             this.AttractieLogo.Image = ((System.Drawing.Image)(resources.GetObject("AttractieLogo.Image")));
-            this.AttractieLogo.Location = new System.Drawing.Point(168, 87);
+            this.AttractieLogo.Location = new System.Drawing.Point(222, 124);
+            this.AttractieLogo.Margin = new System.Windows.Forms.Padding(4);
             this.AttractieLogo.Name = "AttractieLogo";
-            this.AttractieLogo.Size = new System.Drawing.Size(110, 141);
+            this.AttractieLogo.Size = new System.Drawing.Size(147, 174);
             this.AttractieLogo.TabIndex = 6;
             this.AttractieLogo.TabStop = false;
             this.AttractieLogo.Click += new System.EventHandler(this.AttractieLogo_Click);
@@ -83,28 +89,43 @@
             // 
             this.labelKar2.AutoSize = true;
             this.labelKar2.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.labelKar2.Location = new System.Drawing.Point(29, 87);
+            this.labelKar2.Location = new System.Drawing.Point(39, 107);
+            this.labelKar2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKar2.Name = "labelKar2";
-            this.labelKar2.Size = new System.Drawing.Size(57, 18);
+            this.labelKar2.Size = new System.Drawing.Size(74, 23);
             this.labelKar2.TabIndex = 8;
             this.labelKar2.Text = "Kar 2: ...";
+            this.labelKar2.Click += new System.EventHandler(this.labelKar2_Click);
             // 
             // labelKar1
             // 
             this.labelKar1.AutoSize = true;
             this.labelKar1.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.labelKar1.Location = new System.Drawing.Point(29, 68);
+            this.labelKar1.Location = new System.Drawing.Point(39, 84);
+            this.labelKar1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKar1.Name = "labelKar1";
-            this.labelKar1.Size = new System.Drawing.Size(57, 18);
+            this.labelKar1.Size = new System.Drawing.Size(74, 23);
             this.labelKar1.TabIndex = 9;
             this.labelKar1.Text = "Kar 1: ...";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.label1.Location = new System.Drawing.Point(38, 130);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 23);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // FormWachtrij
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(279, 227);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(403, 311);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelKar1);
             this.Controls.Add(this.labelKar2);
             this.Controls.Add(this.AttractieLogo);
@@ -112,6 +133,7 @@
             this.Controls.Add(this.labelWachttijd);
             this.Controls.Add(this.labelTitel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormWachtrij";
             this.Text = "Bugs of Horror";
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).EndInit();
@@ -128,6 +150,7 @@
         private System.Windows.Forms.PictureBox AttractieLogo;
         private System.Windows.Forms.Label labelKar2;
         private System.Windows.Forms.Label labelKar1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
